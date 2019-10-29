@@ -1,0 +1,649 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED757416235DAFD4004967A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED757415235DAFD4004967A1 /* AppDelegate.swift */; };
+		ED75741D235DAFD4004967A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED75741B235DAFD4004967A1 /* Main.storyboard */; };
+		ED75741F235DAFD9004967A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED75741E235DAFD9004967A1 /* Assets.xcassets */; };
+		ED757422235DAFD9004967A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED757420235DAFD9004967A1 /* LaunchScreen.storyboard */; };
+		ED75742D235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75742C235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift */; };
+		ED757438235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED757437235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift */; };
+		ED75744F235DBAAC004967A1 /* paintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75744E235DBAAC004967A1 /* paintViewController.swift */; };
+		ED757451235EE4D0004967A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED757450235EE4D0004967A1 /* SceneDelegate.swift */; };
+		EDAB0FAA235F064F004394C9 /* WallPainter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDAB0FA7235F064F004394C9 /* WallPainter.cpp */; };
+		EDAB0FAB235F064F004394C9 /* WallPainterBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDAB0FA9235F064F004394C9 /* WallPainterBridge.mm */; };
+		EDFF207A23604D82006893CD /* UIColor+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207423604D82006893CD /* UIColor+Utilities.swift */; };
+		EDFF207B23604D82006893CD /* ChromaHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207523604D82006893CD /* ChromaHandle.swift */; };
+		EDFF207C23604D82006893CD /* ChromaShadeSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207623604D82006893CD /* ChromaShadeSlider.swift */; };
+		EDFF207D23604D82006893CD /* ColorModeToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207723604D82006893CD /* ColorModeToggleButton.swift */; };
+		EDFF207E23604D82006893CD /* ChromaAddButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207823604D82006893CD /* ChromaAddButton.swift */; };
+		EDFF207F23604D82006893CD /* ChromaColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFF207923604D82006893CD /* ChromaColorPicker.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED757429235DAFD9004967A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED75740A235DAFD4004967A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED757411235DAFD4004967A1;
+			remoteInfo = "Paint app StoryboardUI";
+		};
+		ED757434235DAFD9004967A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED75740A235DAFD4004967A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED757411235DAFD4004967A1;
+			remoteInfo = "Paint app StoryboardUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ED757412235DAFD4004967A1 /* Paint app StoryboardUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Paint app StoryboardUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED757415235DAFD4004967A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		ED75741C235DAFD4004967A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ED75741E235DAFD9004967A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED757421235DAFD9004967A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ED757423235DAFD9004967A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED757428235DAFD9004967A1 /* Paint app StoryboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paint app StoryboardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED75742C235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_app_StoryboardUITests.swift; sourceTree = "<group>"; };
+		ED75742E235DAFD9004967A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED757433235DAFD9004967A1 /* Paint app StoryboardUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Paint app StoryboardUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED757437235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_app_StoryboardUIUITests.swift; sourceTree = "<group>"; };
+		ED757439235DAFD9004967A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED757447235DB108004967A1 /* Paint app StoryboardUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paint app StoryboardUI-Bridging-Header.h"; sourceTree = "<group>"; };
+		ED75744E235DBAAC004967A1 /* paintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paintViewController.swift; sourceTree = "<group>"; };
+		ED757450235EE4D0004967A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EDAB0FA6235F064F004394C9 /* WallPainterBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPainterBridge.h; sourceTree = "<group>"; };
+		EDAB0FA7235F064F004394C9 /* WallPainter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WallPainter.cpp; sourceTree = "<group>"; };
+		EDAB0FA8235F064F004394C9 /* WallPainter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WallPainter.hpp; sourceTree = "<group>"; };
+		EDAB0FA9235F064F004394C9 /* WallPainterBridge.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WallPainterBridge.mm; sourceTree = "<group>"; };
+		EDFF207423604D82006893CD /* UIColor+Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utilities.swift"; sourceTree = "<group>"; };
+		EDFF207523604D82006893CD /* ChromaHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaHandle.swift; sourceTree = "<group>"; };
+		EDFF207623604D82006893CD /* ChromaShadeSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaShadeSlider.swift; sourceTree = "<group>"; };
+		EDFF207723604D82006893CD /* ColorModeToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModeToggleButton.swift; sourceTree = "<group>"; };
+		EDFF207823604D82006893CD /* ChromaAddButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaAddButton.swift; sourceTree = "<group>"; };
+		EDFF207923604D82006893CD /* ChromaColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChromaColorPicker.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED75740F235DAFD4004967A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED757425235DAFD9004967A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED757430235DAFD9004967A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED757409235DAFD4004967A1 = {
+			isa = PBXGroup;
+			children = (
+				ED757414235DAFD4004967A1 /* Paint app StoryboardUI */,
+				ED75742B235DAFD9004967A1 /* Paint app StoryboardUITests */,
+				ED757436235DAFD9004967A1 /* Paint app StoryboardUIUITests */,
+				ED757413235DAFD4004967A1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED757413235DAFD4004967A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED757412235DAFD4004967A1 /* Paint app StoryboardUI.app */,
+				ED757428235DAFD9004967A1 /* Paint app StoryboardUITests.xctest */,
+				ED757433235DAFD9004967A1 /* Paint app StoryboardUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED757414235DAFD4004967A1 /* Paint app StoryboardUI */ = {
+			isa = PBXGroup;
+			children = (
+				ED757415235DAFD4004967A1 /* AppDelegate.swift */,
+				ED75744E235DBAAC004967A1 /* paintViewController.swift */,
+				ED757450235EE4D0004967A1 /* SceneDelegate.swift */,
+				EDAB0FA7235F064F004394C9 /* WallPainter.cpp */,
+				EDAB0FA8235F064F004394C9 /* WallPainter.hpp */,
+				EDAB0FA6235F064F004394C9 /* WallPainterBridge.h */,
+				EDAB0FA9235F064F004394C9 /* WallPainterBridge.mm */,
+				EDFF207823604D82006893CD /* ChromaAddButton.swift */,
+				EDFF207923604D82006893CD /* ChromaColorPicker.swift */,
+				EDFF207523604D82006893CD /* ChromaHandle.swift */,
+				EDFF207623604D82006893CD /* ChromaShadeSlider.swift */,
+				EDFF207723604D82006893CD /* ColorModeToggleButton.swift */,
+				EDFF207423604D82006893CD /* UIColor+Utilities.swift */,
+				ED75741B235DAFD4004967A1 /* Main.storyboard */,
+				ED75741E235DAFD9004967A1 /* Assets.xcassets */,
+				ED757420235DAFD9004967A1 /* LaunchScreen.storyboard */,
+				ED757423235DAFD9004967A1 /* Info.plist */,
+				ED757447235DB108004967A1 /* Paint app StoryboardUI-Bridging-Header.h */,
+			);
+			path = "Paint app StoryboardUI";
+			sourceTree = "<group>";
+		};
+		ED75742B235DAFD9004967A1 /* Paint app StoryboardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED75742C235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift */,
+				ED75742E235DAFD9004967A1 /* Info.plist */,
+			);
+			path = "Paint app StoryboardUITests";
+			sourceTree = "<group>";
+		};
+		ED757436235DAFD9004967A1 /* Paint app StoryboardUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ED757437235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift */,
+				ED757439235DAFD9004967A1 /* Info.plist */,
+			);
+			path = "Paint app StoryboardUIUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED757411235DAFD4004967A1 /* Paint app StoryboardUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED75743C235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUI" */;
+			buildPhases = (
+				ED75740E235DAFD4004967A1 /* Sources */,
+				ED75740F235DAFD4004967A1 /* Frameworks */,
+				ED757410235DAFD4004967A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Paint app StoryboardUI";
+			productName = "Paint app StoryboardUI";
+			productReference = ED757412235DAFD4004967A1 /* Paint app StoryboardUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ED757427235DAFD9004967A1 /* Paint app StoryboardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED75743F235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUITests" */;
+			buildPhases = (
+				ED757424235DAFD9004967A1 /* Sources */,
+				ED757425235DAFD9004967A1 /* Frameworks */,
+				ED757426235DAFD9004967A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED75742A235DAFD9004967A1 /* PBXTargetDependency */,
+			);
+			name = "Paint app StoryboardUITests";
+			productName = "Paint app StoryboardUITests";
+			productReference = ED757428235DAFD9004967A1 /* Paint app StoryboardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ED757432235DAFD9004967A1 /* Paint app StoryboardUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED757442235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUIUITests" */;
+			buildPhases = (
+				ED75742F235DAFD9004967A1 /* Sources */,
+				ED757430235DAFD9004967A1 /* Frameworks */,
+				ED757431235DAFD9004967A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED757435235DAFD9004967A1 /* PBXTargetDependency */,
+			);
+			name = "Paint app StoryboardUIUITests";
+			productName = "Paint app StoryboardUIUITests";
+			productReference = ED757433235DAFD9004967A1 /* Paint app StoryboardUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED75740A235DAFD4004967A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1110;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Hot Cocoa Software";
+				TargetAttributes = {
+					ED757411235DAFD4004967A1 = {
+						CreatedOnToolsVersion = 11.1;
+						LastSwiftMigration = 1110;
+					};
+					ED757427235DAFD9004967A1 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = ED757411235DAFD4004967A1;
+					};
+					ED757432235DAFD9004967A1 = {
+						CreatedOnToolsVersion = 11.1;
+						TestTargetID = ED757411235DAFD4004967A1;
+					};
+				};
+			};
+			buildConfigurationList = ED75740D235DAFD4004967A1 /* Build configuration list for PBXProject "Paint app StoryboardUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED757409235DAFD4004967A1;
+			productRefGroup = ED757413235DAFD4004967A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED757411235DAFD4004967A1 /* Paint app StoryboardUI */,
+				ED757427235DAFD9004967A1 /* Paint app StoryboardUITests */,
+				ED757432235DAFD9004967A1 /* Paint app StoryboardUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED757410235DAFD4004967A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED757422235DAFD9004967A1 /* LaunchScreen.storyboard in Resources */,
+				ED75741F235DAFD9004967A1 /* Assets.xcassets in Resources */,
+				ED75741D235DAFD4004967A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED757426235DAFD9004967A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED757431235DAFD9004967A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED75740E235DAFD4004967A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED757451235EE4D0004967A1 /* SceneDelegate.swift in Sources */,
+				EDAB0FAB235F064F004394C9 /* WallPainterBridge.mm in Sources */,
+				EDFF207D23604D82006893CD /* ColorModeToggleButton.swift in Sources */,
+				EDFF207E23604D82006893CD /* ChromaAddButton.swift in Sources */,
+				EDFF207A23604D82006893CD /* UIColor+Utilities.swift in Sources */,
+				ED75744F235DBAAC004967A1 /* paintViewController.swift in Sources */,
+				EDFF207F23604D82006893CD /* ChromaColorPicker.swift in Sources */,
+				EDFF207C23604D82006893CD /* ChromaShadeSlider.swift in Sources */,
+				EDFF207B23604D82006893CD /* ChromaHandle.swift in Sources */,
+				ED757416235DAFD4004967A1 /* AppDelegate.swift in Sources */,
+				EDAB0FAA235F064F004394C9 /* WallPainter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED757424235DAFD9004967A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED75742D235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED75742F235DAFD9004967A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED757438235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED75742A235DAFD9004967A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED757411235DAFD4004967A1 /* Paint app StoryboardUI */;
+			targetProxy = ED757429235DAFD9004967A1 /* PBXContainerItemProxy */;
+		};
+		ED757435235DAFD9004967A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED757411235DAFD4004967A1 /* Paint app StoryboardUI */;
+			targetProxy = ED757434235DAFD9004967A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED75741B235DAFD4004967A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED75741C235DAFD4004967A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ED757420235DAFD9004967A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED757421235DAFD9004967A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED75743A235DAFD9004967A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED75743B235DAFD9004967A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED75743D235DAFD9004967A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Paint app StoryboardUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Paint app StoryboardUI/Paint app StoryboardUI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ED75743E235DAFD9004967A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "Paint app StoryboardUI/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Paint app StoryboardUI/Paint app StoryboardUI-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ED757440235DAFD9004967A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Paint app StoryboardUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paint app StoryboardUI.app/Paint app StoryboardUI";
+			};
+			name = Debug;
+		};
+		ED757441235DAFD9004967A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Paint app StoryboardUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Paint app StoryboardUI.app/Paint app StoryboardUI";
+			};
+			name = Release;
+		};
+		ED757443235DAFD9004967A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Paint app StoryboardUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Paint app StoryboardUI";
+			};
+			name = Debug;
+		};
+		ED757444235DAFD9004967A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SSD8A77M73;
+				INFOPLIST_FILE = "Paint app StoryboardUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hcs.Paint-app-StoryboardUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Paint app StoryboardUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED75740D235DAFD4004967A1 /* Build configuration list for PBXProject "Paint app StoryboardUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED75743A235DAFD9004967A1 /* Debug */,
+				ED75743B235DAFD9004967A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED75743C235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED75743D235DAFD9004967A1 /* Debug */,
+				ED75743E235DAFD9004967A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED75743F235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED757440235DAFD9004967A1 /* Debug */,
+				ED757441235DAFD9004967A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED757442235DAFD9004967A1 /* Build configuration list for PBXNativeTarget "Paint app StoryboardUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED757443235DAFD9004967A1 /* Debug */,
+				ED757444235DAFD9004967A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED75740A235DAFD4004967A1 /* Project object */;
+}
