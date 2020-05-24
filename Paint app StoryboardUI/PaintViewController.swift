@@ -8,7 +8,7 @@
 
 import UIKit
 
-class paintViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, ChromaColorPickerDelegate {
+class PaintViewController: UIViewController {
 
     //MARK:- ViewController Outlets
     @IBOutlet var imageView: UIImageView!
@@ -16,11 +16,9 @@ class paintViewController: UIViewController, UIImagePickerControllerDelegate, UI
     //MARK:- ViewController state varibles
     private var touchX = 0.0
     private var touchY = 0.0
-    
+    private var screenSize = CGSize.zero
     private var cameraToggled = false
-    
     private var applyPaint = true
-    
     private var currentColor = UIColor.red
     
     var colorPicker: ChromaColorPicker!
@@ -32,10 +30,31 @@ class paintViewController: UIViewController, UIImagePickerControllerDelegate, UI
         return vc
     }
     
-    private var screenSize = CGSize.zero
+      //MARK:- ViewControllers Action methods
+      @IBAction func takePhoto(_ sender: UIBarButtonItem) {
+          cameraToggled = true
+          getPhoto()
+      }
     
+      @IBAction func openGallery(_ sender: UIBarButtonItem) {
+          cameraToggled = false
+          getPhoto()
+      }
+      
+      @IBAction func toggleTexture(_ sender: UIBarButtonItem) {
+          applyPaint = false
+      }
+      
+      @IBAction func toggleColor(_ sender: UIBarButtonItem) {
+          applyPaint = true
+      }
+      
+      @IBAction func chooseColor(_ sender: UIBarButtonItem) {
+          colorPicker.isHidden = false
+      }
     
-    //MARK:- PaintViewController methods
+    //MARK:- Lifecycle Hooks
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("success")
@@ -50,16 +69,8 @@ class paintViewController: UIViewController, UIImagePickerControllerDelegate, UI
         view.addSubview(colorPicker)
         getPhoto()
     }
-        
-    private func getPhoto() {
-        if cameraToggled {
-            imagePickerVC.sourceType = .camera
-        } else {
-            imagePickerVC.sourceType = .photoLibrary
-        }
-        present(imagePickerVC, animated: true)
-    }
-
+    
+    //MARK:- UIViewController Methods
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         if let touch = touches.first {
@@ -80,7 +91,22 @@ class paintViewController: UIViewController, UIImagePickerControllerDelegate, UI
         }
     }
     
-    //MARK:- ImagePicker delegate methods
+    //MARK:- Custom Methods
+    
+    private func getPhoto() {
+        if cameraToggled {
+            imagePickerVC.sourceType = .camera
+        } else {
+            imagePickerVC.sourceType = .photoLibrary
+        }
+        present(imagePickerVC, animated: true)
+    }
+
+}
+
+//MARK:- ImagePicker delegate methods
+
+extension PaintViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true, completion: nil)
         
@@ -91,35 +117,15 @@ class paintViewController: UIViewController, UIImagePickerControllerDelegate, UI
         print(image)
         imageView.image = image
     }
-    
-    //MARK:- ChromaColorPicker delegate methods
+}
+
+//MARK:- ChromaColorPicker delegate methods
+
+extension PaintViewController: ChromaColorPickerDelegate {
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
         currentColor = color
         colorPicker.hexLabel.textColor = currentColor
         colorPicker.isHidden = true
     }
-    
-    //MARK:- ViewControllers Action methods
-    @IBAction func takePhoto(_ sender: UIBarButtonItem) {
-        cameraToggled = true
-        getPhoto()
-    }
-  
-    @IBAction func openGallery(_ sender: UIBarButtonItem) {
-        cameraToggled = false
-        getPhoto()
-    }
-    
-    @IBAction func toggleTexture(_ sender: UIBarButtonItem) {
-        applyPaint = false
-    }
-    
-    @IBAction func toggleColor(_ sender: UIBarButtonItem) {
-        applyPaint = true
-    }
-    
-    @IBAction func chooseColor(_ sender: UIBarButtonItem) {
-        colorPicker.isHidden = false
-    }
-
 }
+

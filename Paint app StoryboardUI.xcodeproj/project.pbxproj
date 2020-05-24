@@ -13,7 +13,7 @@
 		ED757422235DAFD9004967A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED757420235DAFD9004967A1 /* LaunchScreen.storyboard */; };
 		ED75742D235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75742C235DAFD9004967A1 /* Paint_app_StoryboardUITests.swift */; };
 		ED757438235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED757437235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift */; };
-		ED75744F235DBAAC004967A1 /* paintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75744E235DBAAC004967A1 /* paintViewController.swift */; };
+		ED75744F235DBAAC004967A1 /* PaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED75744E235DBAAC004967A1 /* PaintViewController.swift */; };
 		ED757451235EE4D0004967A1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED757450235EE4D0004967A1 /* SceneDelegate.swift */; };
 		EDAB0FAA235F064F004394C9 /* WallPainter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EDAB0FA7235F064F004394C9 /* WallPainter.cpp */; };
 		EDAB0FAB235F064F004394C9 /* WallPainterBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = EDAB0FA9235F064F004394C9 /* WallPainterBridge.mm */; };
@@ -56,7 +56,7 @@
 		ED757437235DAFD9004967A1 /* Paint_app_StoryboardUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paint_app_StoryboardUIUITests.swift; sourceTree = "<group>"; };
 		ED757439235DAFD9004967A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED757447235DB108004967A1 /* Paint app StoryboardUI-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Paint app StoryboardUI-Bridging-Header.h"; sourceTree = "<group>"; };
-		ED75744E235DBAAC004967A1 /* paintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = paintViewController.swift; sourceTree = "<group>"; };
+		ED75744E235DBAAC004967A1 /* PaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaintViewController.swift; sourceTree = "<group>"; };
 		ED757450235EE4D0004967A1 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EDAB0FA6235F064F004394C9 /* WallPainterBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WallPainterBridge.h; sourceTree = "<group>"; };
 		EDAB0FA7235F064F004394C9 /* WallPainter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WallPainter.cpp; sourceTree = "<group>"; };
@@ -118,24 +118,20 @@
 		ED757414235DAFD4004967A1 /* Paint app StoryboardUI */ = {
 			isa = PBXGroup;
 			children = (
+				EDC7A34A24421A66002518A1 /* Chroma Color Picker */,
 				ED757415235DAFD4004967A1 /* AppDelegate.swift */,
-				ED75744E235DBAAC004967A1 /* paintViewController.swift */,
+				ED75744E235DBAAC004967A1 /* PaintViewController.swift */,
 				ED757450235EE4D0004967A1 /* SceneDelegate.swift */,
 				EDAB0FA7235F064F004394C9 /* WallPainter.cpp */,
 				EDAB0FA8235F064F004394C9 /* WallPainter.hpp */,
 				EDAB0FA6235F064F004394C9 /* WallPainterBridge.h */,
 				EDAB0FA9235F064F004394C9 /* WallPainterBridge.mm */,
-				EDFF207823604D82006893CD /* ChromaAddButton.swift */,
-				EDFF207923604D82006893CD /* ChromaColorPicker.swift */,
-				EDFF207523604D82006893CD /* ChromaHandle.swift */,
-				EDFF207623604D82006893CD /* ChromaShadeSlider.swift */,
-				EDFF207723604D82006893CD /* ColorModeToggleButton.swift */,
+				ED757447235DB108004967A1 /* Paint app StoryboardUI-Bridging-Header.h */,
 				EDFF207423604D82006893CD /* UIColor+Utilities.swift */,
 				ED75741B235DAFD4004967A1 /* Main.storyboard */,
 				ED75741E235DAFD9004967A1 /* Assets.xcassets */,
 				ED757420235DAFD9004967A1 /* LaunchScreen.storyboard */,
 				ED757423235DAFD9004967A1 /* Info.plist */,
-				ED757447235DB108004967A1 /* Paint app StoryboardUI-Bridging-Header.h */,
 			);
 			path = "Paint app StoryboardUI";
 			sourceTree = "<group>";
@@ -156,6 +152,18 @@
 				ED757439235DAFD9004967A1 /* Info.plist */,
 			);
 			path = "Paint app StoryboardUIUITests";
+			sourceTree = "<group>";
+		};
+		EDC7A34A24421A66002518A1 /* Chroma Color Picker */ = {
+			isa = PBXGroup;
+			children = (
+				EDFF207823604D82006893CD /* ChromaAddButton.swift */,
+				EDFF207923604D82006893CD /* ChromaColorPicker.swift */,
+				EDFF207523604D82006893CD /* ChromaHandle.swift */,
+				EDFF207623604D82006893CD /* ChromaShadeSlider.swift */,
+				EDFF207723604D82006893CD /* ColorModeToggleButton.swift */,
+			);
+			path = "Chroma Color Picker";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,7 +303,7 @@
 				EDFF207D23604D82006893CD /* ColorModeToggleButton.swift in Sources */,
 				EDFF207E23604D82006893CD /* ChromaAddButton.swift in Sources */,
 				EDFF207A23604D82006893CD /* UIColor+Utilities.swift in Sources */,
-				ED75744F235DBAAC004967A1 /* paintViewController.swift in Sources */,
+				ED75744F235DBAAC004967A1 /* PaintViewController.swift in Sources */,
 				EDFF207F23604D82006893CD /* ChromaColorPicker.swift in Sources */,
 				EDFF207C23604D82006893CD /* ChromaShadeSlider.swift in Sources */,
 				EDFF207B23604D82006893CD /* ChromaHandle.swift in Sources */,
